@@ -1,5 +1,17 @@
 # AtCoder for Rust
 
+## プロジェクト開始
+
+```bash
+cargo new [プロジェクト名] --bin
+```
+
+## 実行
+
+```bash
+cargo run
+```
+
 ## ライブラリ
 
 AtCoderの言語一覧に記載されていたライブラリ
