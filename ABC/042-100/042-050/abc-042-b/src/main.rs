@@ -1,14 +1,13 @@
 use proconio::input;
 
 fn main() {
+  input! {
+      n:usize,
+      _l:usize,
+      mut s: [String; n]
+  }
 
-    input! {
-        n:usize,
-        _l:usize,
-        mut s: [String; n]
-    }
+  s.sort();
 
-    s.sort();
-
-    println!("{}", s.concat())
+  println!("{}", s.concat())
 }

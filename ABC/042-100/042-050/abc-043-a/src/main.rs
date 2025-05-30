@@ -1,11 +1,11 @@
 use proconio::input;
 
 fn main() {
-    input! {
-        n:usize
-    }
+  input! {
+      n:usize
+  }
 
-    let r: usize = n * (n + 1) / 2;
+  let r: usize = n * (n + 1) / 2;
 
-    println!("{}", r);
+  println!("{}", r);
 }
