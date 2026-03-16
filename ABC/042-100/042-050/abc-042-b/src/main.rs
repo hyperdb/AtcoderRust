@@ -6,7 +6,7 @@ fn main() {
       _l:usize,
       mut s: [String; n]
   }
-
+  // ソートして結合する
   s.sort();
 
   println!("{}", s.concat())
