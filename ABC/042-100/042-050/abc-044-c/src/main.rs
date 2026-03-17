@@ -7,7 +7,7 @@ fn main() {
     x:[usize;n],
   }
   // DPテーブル: dp[i][j][k] := i番目までの整数から、合計がjで、k個選ぶ方法の数
-  let mut dp = vec![vec![vec![0; n + 1]; n * 50 + 1]; n + 1];
+  let mut dp = vec![vec![vec![0i64; n + 1]; n * 50 + 1]; n + 1];
   // ベースケース: 0個選んで合計0の方法は1通り（何も選ばない）
   dp[0][0][0] = 1;
   // DPの遷移
@@ -27,7 +27,7 @@ fn main() {
   }
 
   // 答えを求める
-  let mut r = 0;
+  let mut r: i64 = 0;
   for k in 1..n + 1 {
     r += dp[n][a * k][k];
   }
