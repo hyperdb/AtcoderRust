@@ -23,7 +23,7 @@ fn main() {
       break;
     }
     // 次のプレイヤーを決める
-    let card = cards[player].pop().unwrap();
+    let card = cards[player].remove(0);
     player = match card {
       'a' => 0,
       'b' => 1,
